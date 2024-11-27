@@ -1,12 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Festival de Musique Électro</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    dqsfes
-    
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="img/favicon.png" alt="Logo du festival" />
+        </div>
+
+        <nav class="nav-bar">
+         
+            <a href="index.html" class="nav-bar__link">Accueil</a>
+            <a href="concerts.html" class="nav-bar__link">Concerts</a>
+            <a href="services.html" class="nav-bar__link">Services</a>
+            
+       
+        </nav>
+
+        <nav class="nav-bar-mobile">
+          <button class="nav-bar-mobile__button">
+              <img src="img/hamburger-menu-icon.svg" 
+                   alt="Menu mobile" 
+                   class="nav-bar-mobile__icon" />
+          </button>
+          <div class="nav-bar-mobile__container nav-bar-mobile__container--hidden">
+              <a href="index.html" class="nav-bar-mobile__link">Accueil</a>
+              <a href="concerts.html" class="nav-bar-mobile__link">Concerts</a>
+              <a href="services.html" class="nav-bar-mobile__link">Services</a>
+              
+          </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <img src="img/festival-techno-la-teste-banniere.jpg" 
+           alt="Festival de musique électro - Vue principale" 
+           class="hero__image">
+  </section>
+
+<!-- Info -->
+  <section class="info">
+
+  </section>
+    <div class="info__header">
+        <img src="img/flame-svgrepo-com.svg" alt="" class="info__icon">
+        <h1 class="info__title">Rendez-vous du 𝟏5 au 17 Juin 2025 </h1>
+    </div>
+    <h2 class="info__subtitle">Pour le premier 𝐎𝐏𝐄𝐍 𝐀𝐈𝐑 électronique sur le
+      Bassin d’Arcachon au parc des expositions de La Teste-de-Buch : 𝟏𝟓𝐡 – 𝟎𝟏𝐡 !3 jours de musique électronique au cœur de la ville</h2>
+</section>
+
+
+<!-- Première section -->
+<section class="festival">
+    <div class="festival__content">
+        <div class="festival__text-content">
+            <h2 class="festival__title">Le festival</h2>
+            <h3 class="festival__subtitle">On ne vous avait pas menti !</h3>
+            <p class="festival__description">
+                Cette première édition s'annonce bouillante ! 
+                Top départ à partir de 15h pour une grande fiesta sous le 
+                soleil du Bassin d'Arcachon ! Au programme ? Un espace 
+                vert de 6000 m², une grande scène équipée et 
+                sonorisée par Marée Basse, de la bonne musique, des 
+                stands d'exposants locaux, bar et restauration sur place, 
+                et des activités durant toute la journée ! Et on a encore 
+                plein de surprises à te faire découvrir...
+            </p>
+        </div>
+        <div class="festival__image-container">
+            <img src="img/affiche-festival.jpg" alt="Affiche du festival avec programmation" class="festival__image">
+        </div>
+    </div>
+</section>
+
+<!-- Deuxième section -->
+<section class="banner">
+    <div class="banner__content">
+        <div class="banner__image-container">
+            <img src="img/illu-secondaire.jpg" alt="Logo note de musique" class="banner__logo">
+        </div>
+        <div class="banner__lines">
+            <img src="img/vague-large-ex.png" alt="" class="banner__line banner__line--left">
+            <img src="img/vague-large-ex.png" alt="" class="banner__line banner__line--right">
+        </div>
+    </div>
+</section>
+
+<section class="artists">
+  <h2 class="artists__title">Les Artistes</h2>
+   <!-- Répéter pour chaque artiste -->
+  <div class="artists__grid">
+      <div class="artist-card">
+          <div class="artist-card__image-container">
+              <img src="img/limperatrice.jpeg" alt="L'impératrice" class="artist-card__image">
+              <div class="artist-card__dots">
+                  <span class="artist-card__dot artist-card__dot--pink"></span>
+                  <span class="artist-card__dot artist-card__dot--cyan"></span>
+              </div>
+          </div>
+          <h3 class="artist-card__name">L'impératrice</h3>
+      </div>
+      <!-- Répéter pour chaque artiste -->
+      <div class="artist-card">
+          <div class="artist-card__image-container">
+              <img src="img/Kavinsky_2.jpg" alt="Kavinsky" class="artist-card__image">
+              <div class="artist-card__dots">
+                  <span class="artist-card__dot artist-card__dot--pink"></span>
+                  <span class="artist-card__dot artist-card__dot--cyan"></span>
+              </div>
+          </div>
+          <h3 class="artist-card__name">Kavinsky</h3>
+      </div>
+      <!-- Continuer pour les autres artistes -->
+      <div class="artist-card">
+        <div class="artist-card__image-container">
+            <img src="img/Kavinsky_2.jpg" alt="Kavinsky" class="artist-card__image">
+            <div class="artist-card__dots">
+                <span class="artist-card__dot artist-card__dot--pink"></span>
+                <span class="artist-card__dot artist-card__dot--cyan"></span>
+            </div>
+        </div>
+        <h3 class="artist-card__name">Kavinsky</h3>
+    </div>
+     <!-- Continuer pour les autres artistes -->
+     <div class="artist-card">
+      <div class="artist-card__image-container">
+          <img src="img/Kavinsky_2.jpg" alt="Kavinsky" class="artist-card__image">
+          <div class="artist-card__dots">
+              <span class="artist-card__dot artist-card__dot--pink"></span>
+              <span class="artist-card__dot artist-card__dot--cyan"></span>
+          </div>
+      </div>
+      <h3 class="artist-card__name">Kavinsky</h3>
+  </div>
+   <!-- Continuer pour les autres artistes -->
+   <div class="artist-card">
+    <div class="artist-card__image-container">
+        <img src="img/Kavinsky_2.jpg" alt="Kavinsky" class="artist-card__image">
+        <div class="artist-card__dots">
+            <span class="artist-card__dot artist-card__dot--pink"></span>
+            <span class="artist-card__dot artist-card__dot--cyan"></span>
+        </div>
+    </div>
+    <h3 class="artist-card__name">Kavinsky</h3>
+</div>
+ <!-- Continuer pour les autres artistes -->
+ <div class="artist-card">
+  <div class="artist-card__image-container">
+      <img src="img/Kavinsky_2.jpg" alt="Kavinsky" class="artist-card__image">
+      <div class="artist-card__dots">
+          <span class="artist-card__dot artist-card__dot--pink"></span>
+          <span class="artist-card__dot artist-card__dot--cyan"></span>
+      </div>
+  </div>
+  <h3 class="artist-card__name">Kavinsky</h3>
+</div>
+
+  </div>
+</section>
+
+    <script src="js/menu.js"></script> <!-- ... reste du code ... -->
 </body>
 </html>
