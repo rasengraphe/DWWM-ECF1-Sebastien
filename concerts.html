@@ -8,46 +8,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="images/logo.png" alt="Logo du Festival" class="header__logo-img">
-        </div>
-        <h1 class="header__title">Concerts</h1>
-        <div class="header__burger-menu" id="burger-menu">
-            &#9776; <!-- Icône du menu burger -->
-        </div>
-        <nav class="header__nav nav-hidden" id="nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
-                <li class="header__nav-item"><a href="concerts.html" class="header__nav-link">Concerts</a></li>
-                <li class="header__nav-item"><a href="services.html" class="header__nav-link">Services</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="concerts">
-            <h2 class="concerts__title">Programmation</h2>
-            <div class="concerts__filters">
-                <label class="concerts__filter-label" for="filter-date">Filtrer par date :</label>
-                <select class="concerts__filter-select" id="filter-date">
-                    <option value="">Toutes les dates</option>
-                </select>
-                <label class="concerts__filter-label" for="filter-available">Filtrer par places disponibles :</label>
-                <select class="concerts__filter-select" id="filter-available">
-                    <option value="">Toutes les options</option>
-                    <option value="disponible">Places disponibles</option>
-                    <option value="complet">Complet</option>
-                </select>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Concerts - Festival de Musique Électro</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="img/favicon.png" alt="Logo du festival" />
             </div>
-            <div class="concerts__list"></div>
-        </section>
-    </main>
+    
+            <nav class="nav-bar">
+             
+                <a href="index.html" class="nav-bar__link">Accueil</a>
+                <a href="concerts.html" class="nav-bar__link">Concerts</a>
+                <a href="services.html" class="nav-bar__link">Services</a>
+                
+           
+            </nav>
+    
+            <nav class="nav-bar-mobile">
+              <button class="nav-bar-mobile__button">
+                  <img src="img/hamburger-menu-icon.svg" 
+                       alt="Menu mobile" 
+                       class="nav-bar-mobile__icon" />
+              </button>
+              <div class="nav-bar-mobile__container nav-bar-mobile__container--hidden">
+                  <a href="index.html" class="nav-bar-mobile__link">Accueil</a>
+                  <a href="concerts.html" class="nav-bar-mobile__link">Concerts</a>
+                  <a href="services.html" class="nav-bar-mobile__link">Services</a>
+                  
+              </div>
+          </nav>
+        </header>
 
+        <main>
+            <!-- Section Programmation -->
+            <section class="programmation">
+                <h1 class="programmation__title">Programmation du :</h1>
+                
+                <!-- Filtres -->
+                <div class="programmation__filters">
+                    <button class="programmation__filter-btn">3 Jours</button>
+                    <button class="programmation__filter-btn">15 Juin</button>
+                    <button class="programmation__filter-btn">16 Juin</button>
+                    <button class="programmation__filter-btn">17 Juin</button>
+                </div>
+        
+                <section class="artist-section">
+                    <div id="concerts-container" class="container"></div>
+                </section>
+               
+                  
+                
+            </section>
+        </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p class="footer__copyright">&copy; 2025 Festival de Musique Électro. Tous droits réservés.</p>
+        <div class="footer__content">
+            <p class="footer__text">Festival de musique électro sur le port de plaisance de la Teste</p>
+            
+            <div class="footer__bottom">
+                <nav class="footer__nav">
+                    <a href="index.html" class="footer__link">Accueil</a>
+                    <a href="programme.html" class="footer__link">Programme</a>
+                    <a href="artistes.html" class="footer__link">Artistes</a>
+                    <a href="infos-pratiques.html" class="footer__link">Infos Pratiques</a>
+                    <a href="billetterie.html" class="footer__link">Billetterie</a>
+                </nav>
+                
+                <button class="footer__scroll-top" aria-label="Remonter en haut">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4L4 12H9V20H15V12H20L12 4Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/concerts.js"></script>
+    <script src="js/audioController.js"></script>
+    <script src="js/menu.js"></script> <!-- ... reste du code ... -->
 </body>
 </html>

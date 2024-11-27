@@ -164,7 +164,130 @@
 
   </div>
 </section>
+<!-- Equalizer -->
+<section class="equalizer">
+    <div class="equalizer__content">
+        <div class="equalizer__player">
+            <!-- Point cyan à gauche -->
+            <div class="equalizer__dot-container">
+                <div class="equalizer__dot equalizer__dot--cyan"></div>
+            </div>
 
-    <script src="js/menu.js"></script> <!-- ... reste du code ... -->
+            <button class="equalizer__play-btn" id="playBtn">▶</button>
+            <audio id="audioPlayer" src="mp3/loop.mp3"></audio>
+            
+            
+          
+          <!-- Égaliseur supérieur -->
+          <div class="equalizer__bars">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+
+          <!-- Égaliseur inférieur -->
+          <div class="equalizer__bars equalizer__bars--reverse">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      </div>
+
+       <!-- Point rose à droite -->
+       <div class="equalizer__dot-container">
+        <div class="equalizer__dot equalizer__dot--pink"></div>
+    </div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+    <div class="footer__content">
+        <p class="footer__text">Festival de musique électro sur le port de plaisance de la Teste</p>
+        
+        <div class="footer__bottom">
+            <nav class="footer__nav">
+                <a href="#" class="footer__link">Accueil</a>
+                <a href="#" class="footer__link">Programme</a>
+                <a href="#" class="footer__link">Artistes</a>
+                <a href="#" class="footer__link">Infos Pratiques</a>
+                <a href="#" class="footer__link">Billetterie</a>
+            </nav>
+            
+            <button class="footer__scroll-top" aria-label="Remonter en haut">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4L4 12H9V20H15V12H20L12 4Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/audioController.js"></script>
+<script src="js/menu.js"></script> <!-- ... reste du code ... -->
 </body>
 </html>
